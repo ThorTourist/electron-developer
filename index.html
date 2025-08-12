@@ -21,7 +21,11 @@
   </head>
   <body>
     <nav class="p-3 flex bg-white justify-between items-center">
-      <a href="#" class="flex items-center gap-2" id="brand">
+      <a
+        href="https://www.todesktop.com/"
+        class="flex items-center gap-2"
+        id="brand"
+      >
         <img
           src="assets/logo.png"
           alt="logo"
@@ -29,20 +33,44 @@
         />
         <span class="font-medium text-lg font">ToDesktop</span>
       </a>
+
       <div class="nav-menu hidden md:flex gap-6">
-        <a href="#" class="font-medium hover:text-blue-800">Pricing</a>
-        <a href="#" class="font-medium hover:text-blue-800">Docs</a>
-        <a href="#" class="font-medium hover:text-blue-800">Changelog</a>
-        <a href="#" class="font-medium hover:text-blue-800">Blog</a>
-        <a href="#" class="font-medium hover:text-blue-800">Login</a>
+        <a
+          href="https://www.todesktop.com/#pricing"
+          class="font-medium hover:text-blue-800"
+          >Pricing</a
+        >
+        <a
+          href="https://www.todesktop.com/docs/introduction/getting-started"
+          class="font-medium hover:text-blue-800"
+          >Docs</a
+        >
+        <a
+          href="https://www.todesktop.com/changelog"
+          class="font-medium hover:text-blue-800"
+          >Changelog</a
+        >
+        <a
+          href="https://www.todesktop.com/blog"
+          class="font-medium hover:text-blue-800"
+          >Blog</a
+        >
+        <a
+          href="https://app.todesktop.com/login?redirectTo=/"
+          class="font-medium hover:text-blue-800"
+          >Login</a
+        >
       </div>
-      <button
-        class="hidden md:flex gap-2 items-center border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-800"
-      >
-        <img src="assets/electron-icon.E8mrXtZM.svg" alt="" />
-        <span>Electron Developers</span>
-        <i class="fa-solid fa-arrow-right"></i>
-      </button>
+      <a href="https://www.todesktop.com/electron">
+        <button
+          class="hidden md:flex gap-2 items-center border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-800"
+        >
+          <img src="assets/electron-icon.E8mrXtZM.svg" alt="" />
+          <span>Electron Developers</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </a>
+
       <button class="p-2 md:hidden" onclick="handleMenu()">
         <i class="fa-solid fa-bars text-gray-800"></i>
       </button>
@@ -67,40 +95,104 @@
 
         <div class="mt-6">
           <a
-            href="#"
+            href="https://www.todesktop.com/#pricing"
             class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg"
             >Pricing</a
           >
           <a
-            href="#"
+            href="https://www.todesktop.com/docs/introduction/getting-started"
             class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg"
             >Docs</a
           >
           <a
-            href="#"
+            href="https://www.todesktop.com/changelog"
             class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg"
             >Changelog</a
           >
           <a
-            href="#"
+            href="https://www.todesktop.com/blog"
             class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg"
             >Blog</a
           >
           <a
-            href="#"
+            href="https://app.todesktop.com/login?redirectTo=/"
             class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg"
             >Login</a
           >
         </div>
 
-        <button
-          class="mt-6 w-full flex gap-2 items-center px-6 py-6 rounded-lg hover:bg-gray-50"
-        >
-          <img src="assets/electron-icon.E8mrXtZM.svg" alt="" />
-          <span>Electron Developers</span>
-        </button>
+        <a href="https://www.todesktop.com/electron">
+          <button
+            class="mt-6 w-full flex gap-2 items-center px-6 py-6 rounded-lg hover:bg-gray-50"
+          >
+            <img src="assets/electron-icon.E8mrXtZM.svg" alt="" />
+            <span>Electron Developers</span>
+          </button>
+        </a>
       </div>
     </nav>
+
+    <main>
+      <!-- Hero Container -->
+      <div
+        id="hero"
+        class="min-h-screen bg-gradient-to-br from-purple-50 via-bg-orange-50 to-transparent mx-2"
+      >
+        <div
+          id="hero-container"
+          class="text-white font-bold text-[10px] flex gap-3 justify-center mt-9 mb-8"
+        >
+          <p class="border-2 px-2 py-1 bg-blue-700">Code optional</p>
+          <p class="border-2 px-2 py-1 bg-blue-700">Drag & drop builder</p>
+          <p class="border-2 px-2 py-1 bg-blue-700">Windows, Mac, Linux</p>
+        </div>
+        <div>
+          <h1
+            class="text-5xl text-center text-blue-950 font-sans font-medium md:text-6xl"
+          >
+            Web app to desktop <br />app in minutes
+          </h1>
+          <p class="text-1.5xl text-center mt-5 text-green-950">
+            Take your web app codebase and transform it into a cross platform
+            desktop app with native functionality.
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <picture> </picture>
+      </div>
+    </main>
+
+    <footer>
+      <div class="max-w-full mx-5 border-2 bg-blue-50 flex justify-between">
+        <a
+          href="https://www.todesktop.com/"
+          class="flex items-center gap-2"
+          id="brand"
+        >
+          <img
+            src="assets/logo.png"
+            alt="logo"
+            class="object-cover max-w-12 max-h-12"
+          />
+          <span class="font-medium text-lg font">ToDesktop</span>
+        </a>
+
+        <div class="flex gap-2 px-2 mb-3">
+          <p class="font-semibold">Documentation</p>
+          <a href="https://x.com/ToDesktop">
+            <i class="fa-brands fa-twitter hover:bg-amber-50"></i
+          ></a>
+          <a href="https://x.com/ToDesktop">
+            <i class="fa-brands fa-github"> </i>
+          </a>
+        </div>
+      </div>
+      <p class="text-center mt-8 mb-2 text-1.5 text-purple-950">
+        © 2025 ToDesktop, Inc. All rights reserved.
+      </p>
+    </footer>
   </body>
   <script src="script.js"></script>
 </html>
